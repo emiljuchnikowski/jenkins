@@ -15,5 +15,6 @@ installed = false
 }
 
 if (installed) {
+    Jenkins.instance.setCrumbIssuer(null)
     Jenkins.instance.restart()
 }
